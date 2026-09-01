@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f8f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== NAVIGASI ===== */
+
+nav {
+    background-color: #31572c;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+    text-decoration: underline;
+}
+
+/* ===== ISI UTAMA ===== */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    font-family: "DM Serif Display", serif;
+    color: #31572c;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== SECTION ===== */
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h3 {
+    font-family: "Playfair Display", serif;
+    color: #4f7942;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+section p {
+    font-size: 0.95rem;
+}
+
+/* ===== KOTAK DATA ===== */
+
+.data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.data-box {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.data-box .angka {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2e7d32;
+    margin-bottom: 5px;
+}
+
+.data-box .label {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.keterangan-kecil {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.85rem;
+    color: #757575;
+    font-style: italic;
+    margin-top: 12px;
+}
+
+/* ===== FOTO SEJARAH ===== */
+
+.foto-sejarah {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.foto-sejarah img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ===== FOTO GALERI ===== */
+
+main img {
+    max-width: 100%;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: #31572c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ===== TAMPILAN HP ===== */
+
+@media (max-width: 600px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 8px;
+        overflow-x: auto;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    main h2 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .data-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+}
